@@ -1,0 +1,49 @@
+@import '../../css/variables';
+
+.mission-container {
+  display: flex;
+  background-color: $grey-color;
+  padding: 4% 2%;
+}
+
+.mission-title {
+  transform: rotate(-90deg);
+  color: $white-color;
+  font-size: 6rem;
+  position: relative;
+  top: 30%;
+}
+
+.mission-text {
+  color: $white-color;
+  font-size: 1.4rem;
+  text-align: left;
+  word-spacing: 0.3rem;
+  line-height: 1.7rem;
+}
+
+.mission-last-text {
+  color: $white-color;
+  font-size: 1.4rem;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+@media (max-width: $xs-screen) {
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .mission-title {
+    transform: none;
+  }
+
+  .mission-text {
+    padding: 0 2%;
+  }
+
+  .mission-last-text {
+    padding: 0 2%;
+  }
+}

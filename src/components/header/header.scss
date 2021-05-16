@@ -1,0 +1,56 @@
+@import '../../css/variables';
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo-container {
+  background-color: $blue-color;
+  width: 20vw;
+  margin-left: 2%;
+  padding: 2% 1%;
+  box-shadow: 10px 5px 15px $black-color;
+}
+
+.header-logo {
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  width: 50%;
+}
+
+.header-list-element {
+  color: $white-color;
+  font-size: 2.2rem;
+}
+
+.header-a-element {
+  margin: 0 2%;
+  padding: 0 2%;
+
+  &:hover {
+    background-color: rgba(181, 33, 39, 0.8);
+    transition: 0.2s;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .nav-menu {
+    display: none;
+  }
+
+  .header-logo-container {
+    width: 50%;
+    padding: 6% 4%;
+  }
+
+  .header-list-element {
+    color: $black-color;
+  }
+}

@@ -1,0 +1,38 @@
+
+//Colors
+$white-color: #FFF;
+$black-color: #000;
+$red-color: #B52127;
+$blue-color: #1D386C;
+$grey-color: #282c34;
+
+//Fonts
+$main-font: 'Barlow Regular';
+$title-font: 'Bebas Regular';
+$another: 'Bebas Regular B';
+
+//Devices sizes
+$xs-screen: 450px;
+$md-screen: 700px;
+$lg-screen: 1024px;
+
+@font-face {
+  font-family: 'Barlow Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Barlow-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Bebas Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Bebas-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Bebas Regular B';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/BebasNeue-Regular.otf');
+}
