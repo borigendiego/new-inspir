@@ -1,6 +1,7 @@
 /*
 TODO: Poner los estilos que sean textos aca (h1,h2,h3...,p) con la fuente y tamanos para no tener que repetir eso en cada archivo
 */
+@import './css/variables.scss';
 
 .App {
   text-align: center;
@@ -46,7 +47,7 @@ TODO: Poner los estilos que sean textos aca (h1,h2,h3...,p) con la fuente y tama
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: $red-color;
   z-index: 1;
   transition: all 400ms linear 150ms;
   transform: translateX(-100%);

@@ -26,7 +26,6 @@ function App() {
         <div className="App">
             <Router>
                 <Route render={({ location }) => {
-
                     return (
                         <TransitionGroup>
                             <CSSTransition
