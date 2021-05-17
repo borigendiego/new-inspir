@@ -18,8 +18,8 @@ const Contact = () => {
                         <img src={logo} alt={'logo'} className={'contact-logo'}/>
                     </div>
                     <div className={'contact-text-container'}>
-                        <h2 className={'contact-text'}>FRANCE - AUSTRALIA</h2>
-                        <h2 className={'contact-text'}>PARIS - MELBOURNE</h2>
+                        <h2 className={'contact-text'}>FRANCE - PARIS</h2>
+                        <h2 className={'contact-text'}>AUSTRALIA - MELBOURNE</h2>
                     </div>
                     {/*<div className={'contact-icons-container'}>*/}
                     {/*    <img className={'contact-icon'} src={icon1} alt={'tw'}/>*/}
