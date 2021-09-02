@@ -1,26 +1,27 @@
 import React from 'react';
 //styles
-import './box.scss';
+import styles from './box.container.scss';
 
 const Box = ({boxData}) => {
     const { title, icon, backgroundImage, text } = boxData;
 
     return (
-        <div className={'box'}>
-            <div className={'face face1'} style={{
-                backgroundImage: `url(${backgroundImage})`,
-                backgroundSize: 'cover',
-            }}
+        <div className={styles.box}>
+            <div className={`${styles.face} ${styles.face1}`}
+                 style={{
+                     backgroundImage: `url(${backgroundImage})`,
+                     backgroundSize: 'cover',
+                }}
             >
                 <div className={'box-content'}>
-                    <h1 className={'box-title'}>{title}</h1>
+                    <h1 className={styles.title}>{title}</h1>
                 </div>
             </div>
-            <div className={'face face2'}>
+            <div className={`${styles.face} ${styles.face2}`}>
                 <div className={'box-content'}>
-                    <h3 className={'box-title-two'}>{title}</h3>
-                    <img src={icon} alt={'icon'} className={'box-icon'}/>
-                    <p className={'box-text'}>{text}</p>
+                    <h3 className={styles.title_two}>{title}</h3>
+                    <img src={icon} alt={'icon'} className={styles.icon}/>
+                    <p className={styles.text}>{text}</p>
                 </div>
             </div>
         </div>

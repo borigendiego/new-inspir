@@ -1,0 +1,60 @@
+@import '../../../css/variables';
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 2% 0 2%;
+}
+
+.container.specific_service {
+  padding: 0;
+}
+
+.specific_service {
+  width: 60%;
+
+  .title {
+    display: none;
+  }
+
+  .link {
+    width: 15%;
+  }
+}
+
+.link {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.icon {
+  width: 85%;
+}
+
+.title {
+  font-family: $title-font;
+  padding: 5%;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+@media (max-width: $xs-screen) {
+  .link {
+    height: auto;
+    width: 50%;
+    padding: 5% 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}

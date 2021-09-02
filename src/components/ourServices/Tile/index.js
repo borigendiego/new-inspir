@@ -1,18 +1,15 @@
 import React from 'react';
-import {
-    Link
-} from 'react-router-dom';
+import Link from 'next/link';
 //styles
-import './tile.scss';
-//components and constants
+import styles from './tile.module.scss';
 
 const Tile = ({tileData}) => {
     const { title, icon, linkTo } = tileData;
 
     return (
-        <Link to={`${linkTo}`} className={'tile-link'}>
-            <img src={icon} alt={'icon'} className={'tile-icon'}/>
-            <h3 className={'tile-title'}>{title}</h3>
+        <Link href={`${linkTo}`} className={styles.link}>
+            <img src={icon} alt={'icon'} className={styles.icon}/>
+            <h3 className={styles.title}>{title}</h3>
         </Link>
     )
 };

@@ -1,0 +1,75 @@
+@import '../../../css/variables';
+
+.form-container {
+  width: 50%;
+}
+
+.form {
+  width: 80%;
+  padding-top: 2%;
+}
+
+.form-item {
+  text-align: left;
+  padding: 2% 0;
+}
+
+.form-input {
+  border: 3px solid $red-color;
+  width: 100%;
+  padding: 3% 0 3% 2%;
+  outline: none;
+  background-color: transparent;
+  font-family: $title-font;
+  color: $white-color;
+  font-size: 1.8rem;
+}
+
+.form-input-box {
+  border: 3px solid $red-color;
+  height: 80%;
+  width: 100%;
+  padding-left: 2%;
+  padding-top: 2%;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+  font-family: $title-font;
+  color: $white-color;
+  font-size: 1.8rem;
+}
+
+.form-input-button {
+  background-color: $red-color;
+  color: white;
+  padding: 2% 10%;
+  border: none;
+  cursor: pointer;
+  font-family: $title-font;
+  font-size: 2rem;
+  box-shadow: 2px 2px 2px $black-color;
+
+  &:hover {
+    background-color: white;
+    color: $red-color;
+    transition: 0.3s;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: $xs-screen) {
+  .form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+  }
+
+  .button {
+    justify-content: center;
+  }
+}

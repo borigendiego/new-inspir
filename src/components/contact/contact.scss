@@ -69,65 +69,6 @@
   font-size: 6rem;
 }
 
-.form-container {
-  .inspir-contact-form {
-    display: block;
-    padding-top: 2%;
-
-    .contact-label {
-      display: none;
-    }
-
-    .contact-item {
-      text-align: left;
-      padding: 2% 0;
-      width: 80%;
-    }
-
-    .contact-input {
-      border: 3px solid $red-color;
-      padding: 3% 0 3% 2%;
-      outline: none;
-      background-color: transparent;
-      font-family: $title-font;
-      color: $white-color;
-      font-size: 1.8rem;
-      border-radius: initial;
-      height: auto;
-    }
-
-    .contact-input-box {
-      border: 3px solid $red-color;
-      padding: 3% 0 3% 2%;
-      outline: none;
-      background-color: transparent;
-      font-family: $title-font;
-      color: $white-color;
-      font-size: 1.8rem;
-      border-radius: initial;
-      resize: none;
-    }
-
-    .contact-input-button {
-      background-color: $red-color;
-      color: white;
-      padding: 2% 9%;
-      border: none;
-      cursor: pointer;
-      font-family: $title-font;
-      font-size: 2rem;
-      box-shadow: 2px 2px 2px $black-color;
-
-      &:hover {
-        background-color: white;
-        color: $red-color;
-        transition: 0.3s;
-      }
-    }
-  }
-}
-
-
 @media (max-width: $xs-screen) {
   .contact-content {
     display: block;

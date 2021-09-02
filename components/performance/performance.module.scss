@@ -1,0 +1,36 @@
+@import '../../css/variables';
+
+.container {
+  background-image: url('/assets/images/img_team.jpg');
+  background-position: center;
+}
+
+.words_box_container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 8%;
+}
+
+.title {
+  color: $white-color;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+}
+
+@media (max-width: $xs-screen) {
+  .container {
+    background-size: cover;
+  }
+
+  .words_box_container {
+    display: none;
+  }
+
+  .arrows_container {
+    padding-left: 4%;
+  }
+}

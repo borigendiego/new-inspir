@@ -1,10 +1,9 @@
-import icon1 from '../../assets/images/weare_icon.png';
-import icon2 from '../../assets/images/wedo_icon.png';
-import icon3 from '../../assets/images/innovate_icon.png';
-import backgroundImage1 from '../../assets/images/img_whowe.jpg'
-import backgroundImage2 from '../../assets/images/img_whatwe.jpg'
-import backgroundImage3 from '../../assets/images/img_weinnovate.jpg'
-
+import icon1 from '../../public/assets/images/weare_icon.png';
+import icon2 from '../../public/assets/images/wedo_icon.png';
+import icon3 from '../../public/assets/images/innovate_icon.png';
+import backgroundImage1 from '../../public/assets/images/img_whowe.jpg'
+import backgroundImage2 from '../../public/assets/images/img_whatwe.jpg'
+import backgroundImage3 from '../../public/assets/images/img_weinnovate.jpg'
 
 const BOXES_DATA = [
     {

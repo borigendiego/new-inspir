@@ -1,0 +1,109 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: $title-font;
+  text-align: center;
+}
+
+h2 {
+  font-family: $title-font;
+}
+
+h3 {
+  font-family: $title-font;
+}
+
+p {
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+  color: $black-color;
+  font-family: $title-font;
+}
+
+img {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+//Form styles
+.inspir-contact-form {
+  display: block;
+  padding-top: 2%;
+  width: 45%;
+
+  .contact-label {
+    display: none;
+  }
+
+  .item {
+    text-align: left;
+    padding: 2% 0;
+    width: 80%;
+  }
+
+  .error-message {
+    color: $red-color;
+    font-family: $main-font;
+  }
+
+  .input {
+    border: 3px solid $red-color;
+    padding: 3% 0 3% 2%;
+    outline: none;
+    background-color: transparent;
+    font-family: $title-font;
+    color: $white-color;
+    font-size: 1.8rem;
+    border-radius: initial;
+    height: auto;
+  }
+
+  .contact-input-box, textarea {
+    border: 3px solid $red-color;
+    padding: 3% 0 3% 2%;
+    outline: none;
+    background-color: transparent;
+    font-family: $title-font;
+    color: $white-color;
+    font-size: 1.8rem;
+    border-radius: initial;
+    resize: none;
+  }
+
+  .contact-input-button {
+    background-color: $red-color;
+    color: white;
+    padding: 2% 9%;
+    border: none;
+    cursor: pointer;
+    font-family: $title-font;
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px $black-color;
+
+    &:hover {
+      background-color: white;
+      color: $red-color;
+      transition: 0.3s;
+    }
+  }
+}
+
+@media (max-width: $xs-screen) {
+    .inspir-contact-form {
+      display: flex;
+      justify-content: center;
+    }
+}

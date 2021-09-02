@@ -1,0 +1,83 @@
+@import '../../../css/variables';
+
+.container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.layout {
+  display: flex;
+  background-color: $white-color;
+  justify-content: space-between;
+  padding: 1% 0;
+  margin-bottom: 1%;
+  width: 75%;
+}
+
+.text_wrapper {
+  text-align: left;
+  width: 51%;
+  position: relative;
+  left: 5%;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  padding-top: 3%;
+}
+
+.image {
+  width: 45%;
+  position: relative;
+  left: 3%;
+}
+
+.back_button {
+  font-size: 2.3rem;
+  position: relative;
+  top: 1.5%;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .container {
+    padding: 0;
+    margin-top: 10%;
+  }
+
+  .layout {
+    flex-direction: column-reverse;
+    width: 85%;
+    margin-bottom: 5%;
+  }
+
+  .text-wrapper {
+    width: 100%;
+    position: initial;
+    padding: 0 4%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .image {
+    width: 70%;
+    position: relative;
+    left: 0;
+    bottom: 4%;
+    margin: 0 auto;
+  }
+
+  .back_button {
+    top: 1%;
+  }
+}

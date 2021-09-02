@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "gsap": "^3.6.1",
-    "node-sass": "^5.0.0",
     "prop-types": "latest",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.1",
@@ -19,10 +18,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +40,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^11.1.0",
+    "hippo-components": "^1.1.2",
+    "net": "^1.0.2",
+    "next": "^11.1.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "sass": "^1.38.2",
+    "webp-loader": "^0.6.0"
   }
 }
