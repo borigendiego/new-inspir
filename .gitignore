@@ -23,3 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 # Custom
 .idea
+.eslintcache
+.next
+# Local Netlify folder
+.netlify

@@ -1,6 +1,6 @@
 import React from 'react';
 //styles
-import styles from  './header.module.scss';
+import styles from './header.module.scss';
 //components & constants
 import { MENU_LINKS } from './constants';
 import MobileMenu from './mobile-menu';
@@ -24,7 +24,7 @@ const Header = () => {
                     src={'/assets/images/logo.png'}
                     alt={'logo'}/>
             </div>
-            <ul className={styles.nav_menu} id={'large-screen-menu'}>
+            <ul className={styles.nav_menu}>
                 {
                     headerLinks()
                 }

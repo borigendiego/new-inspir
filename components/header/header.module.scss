@@ -21,7 +21,8 @@
   display: flex;
   list-style: none;
   align-items: center;
-  width: 50%;
+  width: 70%;
+  justify-content: flex-end;
 }
 
 .list_element {
@@ -40,11 +41,13 @@
   }
 }
 
-@media (max-width: $xs-screen) {
-  .nav-menu {
+@media (max-width: $md-screen) {
+  .nav_menu {
     display: none;
   }
+}
 
+@media (max-width: $xs-screen) {
   .logo_container {
     width: 50%;
     padding: 6% 4%;

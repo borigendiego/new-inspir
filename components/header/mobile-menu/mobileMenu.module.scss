@@ -1,6 +1,6 @@
 //Devices sizes
 $xs-screen: 450px;
-$md-screen: 700px;
+$md-screen: 900px;
 $lg-screen: 1024px;
 
 .menu_toggle {
@@ -100,7 +100,7 @@ $lg-screen: 1024px;
 /*
  * Make slide came from right
  */
-.menu_toggle input:checked ~ #menu {
+.menu_toggle input:checked ~ .menu {
   background-color: hsla(0,0%,89.4%,.901961);
   transform: translate(-90%, 0);
 }

@@ -4,11 +4,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5% 2% 0 2%;
+  padding: 4% 2% 1% 2%;
 }
 
 .container.specific_service {
-  padding: 0;
+  padding: 2% 0;
+  margin: auto;
 }
 
 .specific_service {
@@ -16,10 +17,6 @@
 
   .title {
     display: none;
-  }
-
-  .link {
-    width: 15%;
   }
 }
 
@@ -46,15 +43,23 @@
   text-align: center;
 }
 
+@media (max-width: $md-screen) {
+  .container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 @media (max-width: $xs-screen) {
-  .link {
-    height: auto;
-    width: 50%;
-    padding: 5% 0;
+  .container.specific_service {
+    .link {
+      width: 25%;
+    }
   }
 
-  .title {
-    font-size: 1.5rem;
-    padding: 0;
+  .link {
+    height: auto;
+    width: 80%;
+    padding: 5% 0;
   }
 }

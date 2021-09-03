@@ -14,6 +14,7 @@ const Performance = () => {
                 {WORDS_DATA.map((value, index) => <WordsBox wordsBoxData={value} key={index}/>)}
             </div>
             <MobileCarousel
+                autoPlay
                 slides={WORDS_DATA.map((value, index) => <WordsBox wordsBoxData={value} key={index}/>)}
             />
         </div>

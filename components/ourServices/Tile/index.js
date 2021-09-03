@@ -8,7 +8,7 @@ const Tile = ({ isSpecificService }) => {
     return (
         <div className={`${isSpecificService ? `${styles.container} ${styles.specific_service}` : `${styles.container}`}`}>
             {TILE_DATA.map((element, index) =>
-                <Link href={element.linkTo}>
+                <Link href={element.linkTo} key={index}>
                     <a className={styles.link}>
                         <img src={element.icon} alt={'icon'} className={styles.icon}/>
                         <h3 className={styles.title}>{element.title}</h3>

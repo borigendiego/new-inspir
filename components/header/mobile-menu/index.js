@@ -10,7 +10,7 @@ const MobileMenu = ({ menuItems }) => {
             <span />
             <span />
             <span />
-            <ul id={styles.menu}>
+            <ul className={styles.menu}>
                 {menuItems()}
             </ul>
         </div>

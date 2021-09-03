@@ -51,7 +51,6 @@ img {
   .item {
     text-align: left;
     padding: 2% 0;
-    width: 80%;
   }
 
   .error-message {
@@ -105,5 +104,18 @@ img {
     .inspir-contact-form {
       display: flex;
       justify-content: center;
+      width: 100%;
+
+      .contact-input-button {
+        width: 100%;
+      }
     }
+
+  //Mobile carousel styles
+  //TODO: Move mobile carousel to a new component
+  .carousel__inner-slide {
+    height: auto;
+    display: contents;
+    padding: 5%;
+  }
 }

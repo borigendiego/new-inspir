@@ -13,32 +13,34 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 //Icons
 import Arrow from './assets/right-arrow.svg';
 
-const MyCarousel = ({ slides }) => {
+const MyCarousel = ({ slides, autoPlay }) => {
     return (
         <div className={styles.container}>
             <CarouselProvider
                 naturalSlideWidth={200}
                 naturalSlideHeight={110}
                 totalSlides={slides.length}
+                isPlaying={autoPlay}
+                interval={3000}
             >
                 <div>
                     <Slider
-                        className={'mobile-carousel_slider-wrapper'}
+                        className={styles.slider_wrapper}
                     >
                         {
                             slides.map((item, index) =>
-                                <Slide key={`slide-${index}`} index={index} className={'mobile-carousel_slide'}>
+                                <Slide key={`slide-${index}`} index={index}>
                                     {item}
                                 </Slide>
                             )
                         }
                     </Slider>
                 </div>
-                <div className={'arrows-container'}>
-                    <ButtonBack className={'arrow back'}>
+                <div className={styles.arrows_container}>
+                    <ButtonBack className={`${styles.arrow} ${styles.back}`}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonBack>
-                    <ButtonNext className={'arrow next'}>
+                    <ButtonNext className={`${styles.arrow} ${styles.next}`}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonNext>
                 </div>

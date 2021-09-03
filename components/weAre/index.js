@@ -12,7 +12,9 @@ const WeAre = () => {
             <div className={style.boxes_container}>
                 {BOXES_DATA.map((value, index) => <Box boxData={value} key={index} />)}
             </div>
-            <MobileCarousel slides={BOXES_DATA.map((value, index) => <Box boxData={value} key={index} />)}/>
+            <MobileCarousel
+                slides={BOXES_DATA.map((value, index) => <Box boxData={value} key={index} />)}
+            />
             <h1 className={style.title}>WE ARE</h1>
         </div>
     )

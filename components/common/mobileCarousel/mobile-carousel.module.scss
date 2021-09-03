@@ -1,10 +1,17 @@
 @import '../../../css/variables';
 
 .container { display: none; }
+.slider_wrapper {}
+.arrows_container {}
+.arrow{}
+.back{}
+.next{}
 
 @media (max-width: $md-screen) {
   .container {
     display: initial;
+    width: 90%;
+    margin-top: 5%;
 
     .carousel__inner-slide {
       height: auto;
@@ -42,5 +49,5 @@
   }
   .next { grid-area: right; }
 
-  .arrow, .mobile-carousel_slider-wrapper:focus { outline: none; }
+  .arrow, .slider_wrapper:focus { outline: none; }
 }
