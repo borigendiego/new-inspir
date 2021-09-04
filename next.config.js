@@ -7,9 +7,11 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withPlugins(
     [withOptimizedImages, withBundleAnalyzer],
     {
-        webpack(config, se) {
-            if (!se.isServer) {
-                config.resolve.fallback.fs = false;
+        webpack(config, options) {
+            if (!options.isServer) {
+                config.node = {
+                    fs: 'empty'
+                }
             }
 
             return config

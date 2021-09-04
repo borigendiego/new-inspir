@@ -13,7 +13,7 @@ const Contact = () => {
                 <div className={styles.logo_text_icon}>
                     <div className={styles.logo_container}>
                         <img
-                            src={'/assets/images/logo.png'}
+                            src={'/assets/images/logo.png?webp'}
                             alt={'logo'}
                             className={styles.logo}
                         />
