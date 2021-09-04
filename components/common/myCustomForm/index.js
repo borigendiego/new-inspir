@@ -5,8 +5,6 @@ import axios from 'axios';
 import useContactForm from './useContactForm';
 //Component
 import MyInput from './CustomInput';
-//Styles
-import styles from './customForm.module.scss';
 
 const MyCustomForm = ({ fields, onSuccessMessage, onErrorMessage, customClass, submitButtonLabel }) => {
     const [messageSent, setMessageSent] = useState('');

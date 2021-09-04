@@ -1,17 +1,7 @@
-import { useRouter } from 'next/router'
 import ServicesPage from '../../components/servicesPage';
 import { SERVICES_DATA } from '../../components/servicesPage/ServicesItem/constants';
 
-const Service = ({ data }) => {
-    const router = useRouter();
-    const { service } = router.query;
-
-    return (
-        <ServicesPage dataKey={service} />
-    )
-}
-
-export async function getStaticPaths() {
+export const getStaticPaths = async () => {
     return {
         paths: [
             { params: { service: 'partnership' } },
@@ -20,14 +10,24 @@ export async function getStaticPaths() {
             { params: { service: 'team' } },
 
         ], //Pages created at build time
-        fallback: 'blocking' //indicates the type of fallback
+        fallback: false //indicates the type of fallback
     }
 }
 
-export async function getStaticProps() {
+export const getStaticProps = async (context) => {
+    const service = context.params.service;
+
     return {
-        props: {}
+        props: {
+            data: SERVICES_DATA[service]
+        }
     }
+}
+
+const Service = ({ data }) => {
+    return (
+        <ServicesPage service={data} />
+    )
 }
 
 export default Service

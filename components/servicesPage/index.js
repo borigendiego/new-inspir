@@ -4,11 +4,8 @@ import styles from './servicesPage.module.scss'
 //components and constants
 import OurServices from '../ourServices';
 import ServicesItem from './ServicesItem';
-import { SERVICES_DATA } from './ServicesItem/constants';
 
-const ServicesPage = ({ dataKey }) => {
-    const service = SERVICES_DATA[dataKey];
-
+const ServicesPage = ({ service }) => {
     return (
         <div className={styles.container}>
             <OurServices isSpecificService={true} />
