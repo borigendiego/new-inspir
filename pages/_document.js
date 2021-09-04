@@ -12,6 +12,9 @@ export default class MyDocument extends Document {
                         name="Inspir Performance"
                         content="GETTING OVER YOU IS WHAT INSPIRES US"
                     />
+                    <meta name="description" content="We are an elite performance experts, we help top athletes
+                    and executives in competitive fields unlocking the power of the mind and create the mental toughness
+                     to be performant." />
                     <meta property='og:type' content='website' />
                     <meta property='og:title' content='Inspir Performance' />
                     <meta property='og:description' content='We are an elite performance experts, we help top athletes
@@ -19,6 +22,9 @@ export default class MyDocument extends Document {
                      to be performant.'
                     />
                     <meta property='og:site_name' content='Inspir Performance' />
+                    <meta property="og:image" content="https://www.inspirperformance.com/assets/images/img_header.jpg"/>
+                    <meta property="og:image:width" content="1200"/>
+                    <meta property="og:image:height" content="630"/>
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
                     <script
                         async

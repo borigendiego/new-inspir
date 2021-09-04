@@ -1,11 +1,10 @@
 import React from 'react';
-//styles
-import styles from './form.module.scss';
 //comps
 import MyCustomForm from '../../common/myCustomForm';
 import { required, email } from '../fieldValidations';
 
 const Form = () => {
+    //TODO: Remove this file... we are using Hippo-componets
     return (
         <div className={'form-container'}>
             <MyCustomForm
