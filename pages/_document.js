@@ -23,8 +23,6 @@ export default class MyDocument extends Document {
                     />
                     <meta property='og:site_name' content='Inspir Performance' />
                     <meta property="og:image" content="https://www.inspirperformance.com/assets/images/img_header.jpg"/>
-                    <meta property="og:image:width" content="1200"/>
-                    <meta property="og:image:height" content="630"/>
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
                     <script
                         async
