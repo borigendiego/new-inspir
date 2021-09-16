@@ -15,7 +15,7 @@ const WORDS_DATA = [
     },
     {
       word1: 'LEADERSHIP',
-      word2: 'NUTRITION',
+      word2: 'ROUTINES',
       word3: 'MINDFULNESS',
       word4: 'NUTRITION',
       word5: 'STRESS MANAGEMENT',

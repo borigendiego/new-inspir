@@ -55,7 +55,6 @@ const Contact = () => {
             </div>
             <div className={styles.last}>
                 <div className={styles.emails}>
-                    <p>bregnier@inspirperformance.com</p>
                     <p>melbourne@inspirperformance.com</p>
                 </div>
                 <h1 className={styles.title}>CONTACT US</h1>

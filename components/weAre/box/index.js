@@ -13,12 +13,12 @@ const Box = ({boxData}) => {
                      backgroundSize: 'cover',
                 }}
             >
-                <div className={'box-content'}>
+                <div className={styles.content}>
                     <h1 className={styles.title}>{title}</h1>
                 </div>
             </div>
             <div className={`${styles.face} ${styles.face2}`}>
-                <div className={'box-content'}>
+                <div className={styles.content}>
                     <h3 className={styles.title_two}>{title}</h3>
                     <img src={icon} alt={'icon'} className={styles.icon}/>
                     <p className={styles.text}>{text}</p>
