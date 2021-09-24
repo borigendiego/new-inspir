@@ -14,8 +14,10 @@ const ServicesItem = (
         <div className={style.container}>
             <div className={style.layout}>
                 <div className={style.text_wrapper}>
-                    <h2 className={style.title}>{title}</h2>
-                    {paragraphs.map((text, index) => <p key={index} className={style.text}>{text}</p>)}
+                    <div>
+                        <h2 className={style.title}>{title}</h2>
+                        {paragraphs.map((text, index) => <p key={index} className={style.text}>{text}</p>)}
+                    </div>
                     <Link href={'/'}>
                         <a className={style.back_button}>
                             <span>&#8249; MAIN PAGE</span>

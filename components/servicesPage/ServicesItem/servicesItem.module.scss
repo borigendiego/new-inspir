@@ -17,6 +17,9 @@
 
 .text_wrapper {
   padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .title {
@@ -37,7 +40,6 @@
 .back_button {
   font-size: 2.3rem;
   position: relative;
-  top: 1.5%;
 
   &:hover {
     text-decoration: underline;
