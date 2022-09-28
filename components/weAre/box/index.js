@@ -20,7 +20,9 @@ const Box = ({boxData}) => {
             <div className={`${styles.face} ${styles.face2}`}>
                 <div className={'box-content'}>
                     <h3 className={styles.title_two}>{title}</h3>
-                    <img src={icon} alt={'icon'} className={styles.icon}/>
+                    <div className={styles.icon_container}>
+                        <img src={icon} alt={'icon'} className={styles.icon}/>
+                    </div>
                     <p className={styles.text}>{text}</p>
                 </div>
             </div>
