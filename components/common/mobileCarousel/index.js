@@ -13,19 +13,19 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 //Icons
 import Arrow from './assets/right-arrow.svg';
 
-const MyCarousel = ({ slides, autoPlay }) => {
+const MyCarousel = ({ slides, autoPlay, customClass }) => {
     return (
         <div className={styles.container}>
             <CarouselProvider
                 naturalSlideWidth={200}
-                naturalSlideHeight={110}
+                naturalSlideHeight={310}
                 totalSlides={slides.length}
                 isPlaying={autoPlay}
                 interval={3000}
             >
                 <div>
                     <Slider
-                        className={styles.slider_wrapper}
+                        className={`${styles.slider_wrapper} ${customClass}`}
                     >
                         {
                             slides.map((item, index) =>

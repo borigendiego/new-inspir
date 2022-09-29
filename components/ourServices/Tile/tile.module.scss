@@ -11,7 +11,8 @@
 
 .container.specific_service {
   padding: 2% 0;
-  margin: auto;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .specific_service {
@@ -55,6 +56,8 @@
 
 @media (max-width: $xs-screen) {
   .container.specific_service {
+    width: 90%;
+
     .link {
       width: 25%;
     }

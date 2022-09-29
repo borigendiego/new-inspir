@@ -19,7 +19,7 @@
   font-size: 1.4rem;
   text-align: left;
   word-spacing: 0.3rem;
-  line-height: 1.7rem;
+  padding: 4px 0;
 }
 
 //TODO: Handle last text with css selector :last-child
@@ -32,11 +32,14 @@
 }
 
 @media (max-width: $xs-screen) {
-  .container { flex-direction: column; }
+  .container { 
+    flex-direction: column;
+    padding: 25px 0;
+  }
 
   .title { transform: none; }
 
-  .text { padding: 0 2%; }
+  .text { padding: 2% 2%; }
 
   .last_text { padding: 0 2%; }
 }

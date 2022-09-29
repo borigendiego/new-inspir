@@ -1,16 +1,18 @@
 @import '../../../css/variables';
 
 .container {
-  padding: 0;
+  padding: 2px;
   display: flex;
   justify-content: center;
+  max-width: 1500px;
+  margin: 20px auto 0 auto;
 }
 
 .layout {
   display: flex;
   background-color: $white-color;
   justify-content: space-between;
-  padding: 1% 0;
+  padding: 2% 0;
   margin-bottom: 1%;
   width: 75%;
 }
@@ -37,7 +39,7 @@
 .back_button {
   font-size: 2.3rem;
   position: relative;
-  top: 1.5%;
+  top: 4%;
 
   &:hover {
     text-decoration: underline;

@@ -3,6 +3,8 @@ import React from 'react';
 import styles from './ourServices.module.scss';
 //constants and components
 import Tile from './Tile';
+import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
+
 
 const OurServices = ({ isSpecificService }) => {
     return (
@@ -11,7 +13,21 @@ const OurServices = ({ isSpecificService }) => {
             id={'SERVICES'}
         >
             <h1 className={styles.title}>OUR SERVICES</h1>
-            <Tile isSpecificService={isSpecificService} />
+            <motion.div
+                className={styles.boxes_container}
+                initial={{
+                    opacity: 0,
+                    x: -15,
+                    }}
+                whileInView={{
+                    opacity: 1,
+                    x: 0,
+                }}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 0.5}}
+            >
+                <Tile isSpecificService={isSpecificService} />
+            </motion.div> 
         </div>
     )
 };
