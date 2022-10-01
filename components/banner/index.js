@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './banner.module.scss';
 //components
 import Header from '../header';
+import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
 
 const Banner = () => {
     return(
@@ -20,9 +21,19 @@ const Banner = () => {
                     type={'video/mp4'}
                 />
             </video>
-            <h1 className={styles.text}>
+            <motion.h1 
+            className={styles.text}
+            initial={{
+                opacity: 0,
+                }}
+            whileInView={{
+                opacity: 1,
+            }}
+            viewport={{ once: true }}
+            transition={{duration: 1, delay: 1}}
+            >
                 GETTING OVER YOU IS WHAT INSPIRES US
-            </h1>
+            </motion.h1>
         </div>
     )
 };

@@ -3,6 +3,8 @@
 .container {
   display: flex;
   justify-content: space-between;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .logo_container {
@@ -33,10 +35,11 @@
 .header_a_element {
   margin: 0 2%;
   padding: 0 2%;
+  transition: ease 0.3s;
 
   &:hover {
-    background-color: rgba(181, 33, 39, 0.8);
-    transition: 0.2s;
+    background-color: rgba(181, 33, 39, 0.7);
+    transition: 0.3s;
     transform: scale(1.1);
   }
 }

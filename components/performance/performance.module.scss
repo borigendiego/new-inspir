@@ -3,6 +3,7 @@
 .container {
   background-image: url('/assets/images/img_team.jpg?webp');
   background-position: center;
+  background-size: cover;
 }
 
 .words_box_container {
@@ -25,6 +26,10 @@
   .container {
     background-size: cover;
     height: 80vh;
+  }
+  .title {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .words_box_container {

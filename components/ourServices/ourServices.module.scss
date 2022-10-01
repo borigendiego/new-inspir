@@ -2,19 +2,22 @@
 
 .container {
   background-image: url('/assets/images/img_athletics.jpg?webp');
-  background-position: center;
+  background-size: cover;
+  padding: 35px 0;
 }
 
 .container.specific_container {
   background: none;
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
 }
 
 .specific_container {
   display: flex;
 
   .tile_container {
-    width: 70%;
+    width: 300px;
   }
 
   .tile_title {
@@ -35,6 +38,19 @@
     background-size: cover;
   }
 
+  .container.specific_container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .specific_container {
+    display: flex;
+  
+    .tile_container {
+      height: auto;
+    }
+  }
   .title {
     font-size: 5.5rem;
     padding-top: 5%;

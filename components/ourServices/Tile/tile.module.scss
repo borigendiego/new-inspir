@@ -4,12 +4,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 4% 1%;
+  padding: 5% 1%;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .container.specific_service {
   padding: 2% 0;
-  margin: auto;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .specific_service {
@@ -25,15 +28,15 @@
 }
 
 .link {
-  width: 20%;
-  height: 20em;
+  width: 295px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 0.3s;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -43,8 +46,8 @@
 
 .title {
   font-family: $title-font;
-  padding: 5%;
   font-size: 1.9rem;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -57,6 +60,8 @@
 
 @media (max-width: $xs-screen) {
   .container.specific_service {
+    width: 90%;
+
     .link {
       width: 25%;
     }

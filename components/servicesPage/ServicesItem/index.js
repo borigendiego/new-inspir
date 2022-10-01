@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 //styles
 import style from './servicesItem.module.scss';
+import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
+
 
 const ServicesItem = (
     {
@@ -11,7 +13,19 @@ const ServicesItem = (
     }) => {
 
     return (
-        <div className={style.container}>
+        <motion.div 
+        className={style.container}
+        initial={{
+            opacity: 0,
+            x: -15,
+            }}
+        whileInView={{
+            opacity: 1,
+            x: 0,
+        }}
+        viewport={{ once: true }}
+        transition={{duration: 1, delay: 0.5}}
+        >
             <div className={style.layout}>
                 <div className={style.text_wrapper}>
                     <div>
@@ -26,7 +40,7 @@ const ServicesItem = (
                 </div>
                 <img src={image} alt={''} className={style.image} />
             </div>
-        </div>
+        </motion.div>
     )
 };
 
